@@ -1,0 +1,19 @@
+#!/bin/bash
+
+#mkdir -p ~/Pictures
+if [[ $1 = "-f" ]]; then
+    scrot 'Cheese_%y.%m.%-d_%H.%M.%S.png' --focused --border \
+    -e 'mv $f ~/Imágenes/'
+    #'mv $f ~/Imágenes; xdg-open ~/Imágenes/$f'
+
+elif [[ $1 = "-s" ]]; then
+    scrot 'Cheese_%y.%m.%-d_%H.%M.%S.png' --select \
+    -e 'mv $f ~/Imágenes/'
+    #-e 'mv $f ~/Pictures; xdg-open ~/Pictures/$f'
+
+else
+    scrot 'Cheese_%y.%m.%-d_%H.%M.%S.png' \
+    -e 'mv $f ~/Imágenes/'
+    #'mv $f ~/Pictures; xdg-open ~/Pictures/$f'
+    notify-send 'Screenshot' 'Taken successfully.' --icon=stock_check-filled
+fi

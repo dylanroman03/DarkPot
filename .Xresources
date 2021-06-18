@@ -1,0 +1,67 @@
+!! URxvt Appearance
+!!URxvt.font: xft:JetBrainsMono:light:pixelsize=13
+URxvt.font: xft:JetBrainsMono NF:pixelsize=13
+!!URxvt.font: -*-terminesspowerline-*
+/* URxvt.transparent: true */ 
+URxvt.shading: 30
+URxvt.cursorBlink: 1
+URxvt*titleBar: false
+URxvt*scrollBar: False
+URxvt*scrollTtyOutput: False
+URxvt*scrollTtyKeypress: True
+URxvt*secondaryScroll: True
+URxvt*saveLines: 8000
+URxvt*letterSpace: -0.5 
+/* *.background: #222222 */
+ 
+URxvt.geometry: 61x19
+
+!! Common Keybinds for Navigations
+!!URxvt.keysym.Shift-Up: command:\033]720;1\007
+!!URxvt.keysym.Shift-Down: command:\033]721;1\007
+!!URxvt.keysym.Control-Up: \033[1;5A
+!!URxvt.keysym.Control-Down: \033[1;5B
+!!URxvt.keysym.Control-Right: \033[1;5C
+!!URxvt.keysym.Control-Left: \033[1;5D
+
+!! Copy Paste & Other Extensions
+!!URxvt.perl-ext-common: default,clipboard,url-select,keyboard-select
+!!URxvt.copyCommand: xclip -i -selection clipboard
+!!URxvt.pasteCommand: xclip -o -selection clipboard
+!!URxvt.keysym.M-c: perl:clipboard:copy
+!!URxvt.keysym.M-v: perl:clipboard:paste
+!!URxvt.keysym.M-C-v: perl:c:paste_escaped
+!!URxvt.keysym.M-Escape: perl:keyboard-select:activate
+!!URxvt.keysym.M-s: perl:keyboard-select:search
+!!URxvt.keysym.M-u: perl:url-select:select_next
+!!URxvt.urlLauncher: firefox
+!!URxvt.underlineURLs: true
+!!URxvt.urlButton: 1
+
+URxvt.keysym.Shift-Control-V: perl:clipboard:paste
+URxvt.iso14755: False
+URxvt.perl-ext-common: default,clipboard
+
+
+URxvt.opacity: 1.0
+
+/* URxvt.background: #11121D */
+/* URxvt.foreground: #a9b1d6 */
+
+/* URxvt.color0: #32344a */
+/* URxvt.color1: #f7768e */
+/* URxvt.color2: #9ece6a */
+/* URxvt.color3: #e0af68 */
+/* URxvt.color4: #7aa2f7 */
+/* URxvt.color5: #ad8ee6 */
+/* URxvt.color6: #449dab */
+/* URxvt.color7: #787c99 */
+
+/* URxvt.color8: "#444b6a" */
+/* URxvt.color9: "#ff7a93" */
+/* URxvt.color10: "#b9f27c" */
+/* URxvt.color11: "#ff9e64" */
+/* URxvt.color12: "#7da6ff" */
+/* URxvt.color13: "#bb9af7" */
+/* URxvt.color14: "#0db9d7" */
+/* URxvt.color15: "#acb0d0" */
